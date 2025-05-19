@@ -1,425 +1,435 @@
 :root {
-    --primary-color: #005baa;
-    --secondary-color: #e4002b;
-    --dark-blue: #003a70;
-    --light-blue: #e6f3ff;
-    --gray-dark: #343a40;
-    --gray-light: #f8f9fa;
+  --primary-color: #005baa;
+  --secondary-color: #e4002b;
+  --dark-blue: #003a70;
+  --light-blue: #e6f3ff;
+  --gray-dark: #343a40;
+  --gray-light: #f8f9fa;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    padding-top: 76px;
+  font-family: "Roboto", sans-serif;
+  padding-top: 76px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Custom button styles */
 .btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
-.btn-primary:hover, .btn-primary:focus {
-    background-color: var(--dark-blue);
-    border-color: var(--dark-blue);
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
 }
 
 .btn-outline-primary {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
-.btn-outline-primary:hover, .btn-outline-primary:focus {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .btn-outline-primary.active {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: white;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
 }
 
 /* Navbar styles */
 .navbar {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand span {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .nav-link {
-    font-weight: 500;
-    padding: 0.5rem 1rem !important;
-    transition: all 0.3s ease;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.3s ease;
 }
 
-.nav-link:hover, .nav-link.active {
-    color: var(--primary-color) !important;
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-color) !important;
 }
 /* Hero section */
 .hero-section {
-    background: linear-gradient(rgb(35, 35, 35), rgb(57, 57, 57)), url('images/vku-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    color: white;
+  background-image: url("images/vku-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  color: white;
 }
 
 /* Page Header */
 .page-header {
-    margin-top: 76px;
+  margin-top: 76px;
 }
 
 /* Club Hero Section */
 .club-hero {
-        height: 60vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    margin-top: 76px;
-    }
-    
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  margin-top: 76px;
+}
+
 /* Section titles */
 .section-title {
-    position: relative;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-    color: var(--gray-dark);
-    }
+  position: relative;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: var(--gray-dark);
+}
 
 .section-title::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: var(--primary-color);
-    margin: 0.5rem auto 0;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0.5rem auto 0;
 }
 
 /* Club cards */
 .club-card {
-    transition: all 0.3s ease;
-    height: 100%;
+  transition: all 0.3s ease;
+  height: 100%;
 }
 
 .club-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .club-card .card-img-top {
-    height: 200px;
-    object-fit: cover;
+  height: 200px;
+  object-fit: cover;
 }
 
 .club-category {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 /* Event cards */
 .event-card {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .event-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .event-date {
-    background-color: var(--primary-color);
-    color: white;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 .event-date .day {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .event-date .month {
-    font-size: 0.8rem;
-    text-transform: uppercase;
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
 /* Gallery */
 .gallery-item {
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
 }
 
 .gallery-item img {
-    transition: transform 0.5s ease;
-    height: 250px;
-    object-fit: cover;
-    width: 100%;
+  transition: transform 0.5s ease;
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .gallery-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 91, 170, 0.7);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 91, 170, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .gallery-item:hover .gallery-overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Social icons */
 .social-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--primary-color);
-    transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-color);
+  transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-    background-color: var(--primary-color);
-    color: white;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 footer .social-icon {
-    background-color: rgba(255, 255, 255, 0.168);
-    color: white;
+  background-color: rgba(255, 255, 255, 0.168);
+  color: white;
 }
 
 footer .social-icon:hover {
-    background-color: white;
-    color: var(--primary-color);
+  background-color: white;
+  color: var(--primary-color);
 }
 
 /* Club detail modal */
 .modal-club-logo {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid var(--primary-color);
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
 }
 
 .club-member {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .club-member:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .member-avatar {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid var(--primary-color);
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
 }
 
 /* Animations */
 .fade-in {
-    animation: fadeIn 0.5s ease-in;
+  animation: fadeIn 0.5s ease-in;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .hero-section {
-        height: 60vh;
-        text-align: center;
-    }
-    
-    .section-title::after {
-        margin: 0.5rem auto 0;
-    }
+  .hero-section {
+    height: 60vh;
+    text-align: center;
+  }
+
+  .section-title::after {
+    margin: 0.5rem auto 0;
+  }
 }
 
 /* Club Detail Row */
 .club-detail-row {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .club-detail-row:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /* Timeline for achievements */
 .timeline {
-    position: relative;
-    padding-left: 30px;
+  position: relative;
+  padding-left: 30px;
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background-color: var(--primary-color);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: var(--primary-color);
 }
 
 .timeline-item {
-    position: relative;
-    margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .timeline-dot {
-    position: absolute;
-    left: -39px;
-    top: 5px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    border: 4px solid white;
-    box-shadow: 0 0 0 2px var(--primary-color);
-
+  position: absolute;
+  left: -39px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: 4px solid white;
+  box-shadow: 0 0 0 2px var(--primary-color);
 }
 
-
 .timeline-content {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .timeline-content h5 {
-    margin-bottom: 10px;
-    color: var(--primary-color);
+  margin-bottom: 10px;
+  color: var(--primary-color);
 }
 
 /* Club sidebar */
 .club-sidebar {
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Event date small for sidebar */
 .event-date-small {
-    background-color: var(--primary-color);
-    color: white;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
 
 .event-date-small .day {
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 1;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .event-date-small .month {
-    font-size: 0.7rem;
-    text-transform: uppercase;
+  font-size: 0.7rem;
+  text-transform: uppercase;
 }
 
 /* Testimonial carousel */
 .testimonial-item {
-    padding: 20px;
+  padding: 20px;
 }
 
 .testimonial-item img {
-    border: 3px solid var(--primary-color);
+  border: 3px solid var(--primary-color);
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 40px;
-    height: 40px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 1;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
 }
 
 .carousel-control-prev {
-    left: -50px;
+  left: -50px;
 }
 
 .carousel-control-next {
-    right: -50px;
+  right: -50px;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 /* Responsive adjustments for club pages */
 @media (max-width: 991px) {
-    .club-hero {
-        height: 50vh;
-    }
-    
-    .carousel-control-prev,
-    .carousel-control-next {
-        display: none;
-    }
+  .club-hero {
+    height: 50vh;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
-    .club-hero {
-        height: 40vh;
-    }
-    
-    .timeline {
-        padding-left: 20px;
-    }
-    
-    .timeline-dot {
-        left: -29px;
-        width: 16px;
-        height: 16px;
-    }
+  .club-hero {
+    height: 40vh;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-dot {
+    left: -29px;
+    width: 16px;
+    height: 16px;
+  }
 }
