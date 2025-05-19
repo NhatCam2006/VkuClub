@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKU AI Club - Vietnam-Korea University</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/vku-logo.png" alt="VKU Logo" height="50" class="me-2">
+                <div>
+                    <span class="fw-bold text-primary">VKU</span>
+                    <small class="d-block text-muted">Vietnam-Korea University</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Clubs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="tech-clubs.html">Technology</a></li>
+                            <li><a class="dropdown-item" href="academic-clubs.html">Academic</a></li>
+                            <li><a class="dropdown-item" href="arts-clubs.html">Arts & Culture</a></li>
+                            <li><a class="dropdown-item" href="sports-clubs.html">Sports</a></li>
+                            <li><a class="dropdown-item" href="community-clubs.html">Community Service</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Club Hero Section -->
+    <section class="club-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/clubs/ai-club-cover.jpg');">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <img src="images/clubs/ai-club-logo.jpg" alt="IT Club Logo" class="rounded-circle mb-4" width="120" height="120" style="border: 4px solid white;">
+                    <h1 class="display-4 fw-bold">VKU AI Club</h1>
+                    <p class="lead">A community for IT enthusiasts to learn, share knowledge, and develop technical skills</p>
+                    <div class="d-flex justify-content-center gap-3 mt-4">
+                        <a href="https://www.facebook.com/vkuaiclub" target="_blank" class="btn btn-outline-light"><i class="fab fa-facebook-f me-2"></i>Follow Us</a>
+                        <a href="index.html#contact" class="btn btn-primary"><i class="fas fa-user-plus me-2"></i>Join Club</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Club Info Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">About VKU AI Club</h2>
+                    <p class="lead">The VKU AI Club is a vibrant community of technology enthusiasts dedicated to exploring and mastering various aspects of information technology.</p>
+                    <p>Our club offers a space for members to explore AI technologies, work on real-world projects, and discuss ethical and practical implications of AI advancements. Through workshops, coding competitions, and guest lectures from industry professionals, we aim to bridge the gap between academic learning and practical application.</p>
+                    <p>Whether you're a beginner looking to start your journey in IT or an experienced coder wanting to share your knowledge, VKU AI Club welcomes everyone with a passion for technology. We believe in learning by doing and creating a supportive environment where members can grow together.</p>
+                    
+                    <h3 class="mt-5 mb-4">Our Mission</h3>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-primary me-2"></i> Foster a community of technology enthusiasts at VKU</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-primary me-2"></i> Provide practical learning opportunities beyond the classroom</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-primary me-2"></i> Develop technical and soft skills through hands-on projects</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-primary me-2"></i> Connect students with industry professionals and opportunities</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-primary me-2"></i> Represent VKU in national and international tech competitions</li>
+                    </ul>
+                    
+                    <h3 class="mt-5 mb-4">Activities & Events</h3>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-laptop-code text-primary me-2"></i>Weekly Coding Sessions</h5>
+                                    <p class="card-text">Regular hands-on coding sessions where members work on projects, solve problems, and learn new technologies together.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-chalkboard-teacher text-primary me-2"></i>
+                                        <p class="card-text">Presentations and discussions on emerging technologies, programming languages, and industry trends by members and guest speakers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-trophy text-primary me-2"></i>Hackathons & Competitions</h5>
+                                        <p class="card-text">Participation in internal and external coding competitions, hackathons, and challenges to test and showcase skills.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-building text-primary me-2"></i>Industry Visits</h5>
+                                        <p class="card-text">Organized visits to tech companies and startups to gain insights into professional work environments and industry practices.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-users text-primary me-2"></i>Project Collaborations</h5>
+                                        <p class="card-text">Team-based projects where members collaborate to build applications, websites, and other tech solutions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-graduation-cap text-primary me-2"></i>Workshops & Training</h5>
+                                        <p class="card-text">Specialized workshops on specific technologies, tools, and methodologies to enhance members' skills.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="mt-5 mb-4">Achievements</h3>
+                        <div class="timeline mb-5">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h5>1st place in National Collegiate Programming Contest 2022</h5>
+                                    <p>Our team of three members won the top prize at the national programming competition, showcasing exceptional problem-solving skills and teamwork.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h5>Best Innovation Award at Da Nang Hackathon 2021</h5>
+                                    <p>Developed an innovative solution for urban mobility challenges, earning recognition from industry judges and local government officials.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h5>Successfully organized VKU Tech Conference with 500+ attendees</h5>
+                                    <p>Planned and executed the university's largest tech event, featuring keynote speakers from leading tech companies, workshops, and project showcases.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h5>Developed campus mobile app used by 2000+ students</h5>
+                                    <p>Created a comprehensive mobile application for campus navigation, event notifications, and academic resources that has become an essential tool for VKU students.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h5>Established partnership with 5 tech companies for internship opportunities</h5>
+                                    <p>Built relationships with local and international tech companies to provide exclusive internship and job opportunities for club members.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="mt-5 mb-4">Projects</h3>
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <img src="images/projects/vku-app.jpg" class="card-img-top" alt="VKU Campus App">
+                                    <div class="card-body">
+                                        <h5 class="card-title">VKU Campus App</h5>
+                                        <p class="card-text">A comprehensive mobile application for VKU students featuring campus maps, event notifications, class schedules, and academic resources.</p>
+                                        <div class="d-flex gap-2 mt-3">
+                                            <span class="badge bg-primary">React Native</span>
+                                            <span class="badge bg-secondary">Firebase</span>
+                                            <span class="badge bg-info">Node.js</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <img src="images/projects/smart-classroom.jpg" class="card-img-top" alt="Smart Classroom System">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Smart Classroom System</h5>
+                                        <p class="card-text">IoT-based system for monitoring and controlling classroom environment, including temperature, lighting, and attendance tracking.</p>
+                                        <div class="d-flex gap-2 mt-3">
+                                            <span class="badge bg-success">Arduino</span>
+                                            <span class="badge bg-warning text-dark">Python</span>
+                                            <span class="badge bg-danger">IoT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <img src="images/projects/code-mentor.jpg" class="card-img-top" alt="CodeMentor Platform">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CodeMentor Platform</h5>
+                                        <p class="card-text">Web platform connecting beginner programmers with experienced mentors for personalized learning and project guidance.</p>
+                                        <div class="d-flex gap-2 mt-3">
+                                            <span class="badge bg-primary">React</span>
+                                            <span class="badge bg-success">MongoDB</span>
+                                            <span class="badge bg-info">Express</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <img src="images/projects/vku-hackathon.jpg" class="card-img-top" alt="Hackathon Management System">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hackathon Management System</h5>
+                                        <p class="card-text">Comprehensive platform for organizing and managing hackathons, including team formation, project submission, and judging.</p>
+                                        <div class="d-flex gap-2 mt-3">
+                                            <span class="badge bg-primary">Vue.js</span>
+                                            <span class="badge bg-danger">Laravel</span>
+                                            <span class="badge bg-warning text-dark">MySQL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card sticky-top club-sidebar" style="top: 100px;">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Club Information</h4>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-calendar-alt text-primary me-3 fa-fw"></i>
+                                    <div>
+                                        <h6 class="mb-0">Founded</h6>
+                                        <p class="mb-0 text-muted">2020</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-users text-primary me-3 fa-fw"></i>
+                                    <div>
+                                        <h6 class="mb-0">Members</h6>
+                                        <p class="mb-0 text-muted">120+ active members</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-clock text-primary me-3 fa-fw"></i>
+                                    <div>
+                                        <h6 class="mb-0">Meeting Schedule</h6>
+                                        <p class="mb-0 text-muted">Every Wednesday, 5:00 PM - 7:00 PM</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-map-marker-alt text-primary me-3 fa-fw"></i>
+                                    <div>
+                                        <h6 class="mb-0">Location</h6>
+                                        <p class="mb-0 text-muted">Building A, Room 305</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-envelope text-primary me-3 fa-fw"></i>
+                                    <div>
+                                        <h6 class="mb-0">Email</h6>
+                                        <p class="mb-0 text-muted">aiclub@vku.udn.vn</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <i class="fab fa-facebook-f text-primary me-3 fa-fw"></i>
+                                    <div>
+                                        <h6 class="mb-0">Facebook</h6>
+                                        <p class="mb-0 text-muted">facebook.com/vkuaiclub</p>
+                                    </div>
+                                </div>
+                                <a href="index.html#contact" class="btn btn-primary w-100">Join This Club</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card mt-4">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Leadership Team</h4>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/members/member1.jpg" alt="Nguyen Van A" class="rounded-circle me-3" width="60" height="60">
+                                    <div>
+                                        <h6 class="mb-0">Nguyen Van A</h6>
+                                        <p class="mb-0 text-muted">President</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/members/member2.jpg" alt="Tran Thi B" class="rounded-circle me-3" width="60" height="60">
+                                    <div>
+                                        <h6 class="mb-0">Tran Thi B</h6>
+                                        <p class="mb-0 text-muted">Vice President</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="images/members/member3.jpg" alt="Le Van C" class="rounded-circle me-3" width="60" height="60">
+                                    <div>
+                                        <h6 class="mb-0">Le Van C</h6>
+                                        <p class="mb-0 text-muted">Technical Lead</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="images/members/member4.jpg" alt="Pham Thi D" class="rounded-circle me-3" width="60" height="60">
+                                    <div>
+                                        <h6 class="mb-0">Pham Thi D</h6>
+                                        <p class="mb-0 text-muted">Secretary</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card mt-4">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Upcoming Events</h4>
+                                <div class="upcoming-event mb-3">
+                                    <div class="d-flex">
+                                        <div class="event-date-small me-3">
+                                            <span class="day">15</span>
+                                            <span class="month">Nov</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1">VKU Tech Conference 2023</h6>
+                                            <p class="mb-0 small text-muted">9:00 AM - 5:00 PM | VKU Auditorium</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="upcoming-event mb-3">
+                                    <div class="d-flex">
+                                        <div class="event-date-small me-3">
+                                            <span class="day">28</span>
+                                            <span class="month">Nov</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1">Web Development Workshop</h6>
+                                            <p class="mb-0 small text-muted">2:00 PM - 5:00 PM | Building A, Room 305</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="upcoming-event">
+                                    <div class="d-flex">
+                                        <div class="event-date-small me-3">
+                                            <span class="day">10</span>
+                                            <span class="month">Dec</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1">End of Year Coding Challenge</h6>
+                                            <p class="mb-0 small text-muted">1:00 PM - 6:00 PM | Building A, Room 305</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card mt-4">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Technologies We Work With</h4>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-primary p-2">JavaScript</span>
+                                    <span class="badge bg-secondary p-2">Python</span>
+                                    <span class="badge bg-success p-2">Java</span>
+                                    <span class="badge bg-danger p-2">React</span>
+                                    <span class="badge bg-warning text-dark p-2">Angular</span>
+                                    <span class="badge bg-info text-dark p-2">Vue.js</span>
+                                    <span class="badge bg-dark p-2">Node.js</span>
+                                    <span class="badge bg-primary p-2">Express</span>
+                                    <span class="badge bg-secondary p-2">Django</span>
+                                    <span class="badge bg-success p-2">Spring Boot</span>
+                                    <span class="badge bg-danger p-2">MongoDB</span>
+                                    <span class="badge bg-warning text-dark p-2">MySQL</span>
+                                    <span class="badge bg-info text-dark p-2">PostgreSQL</span>
+                                    <span class="badge bg-dark p-2">Docker</span>
+                                    <span class="badge bg-primary p-2">AWS</span>
+                                    <span class="badge bg-secondary p-2">Git</span>
+                                    <span class="badge bg-success p-2">Mobile Dev</span>
+                                    <span class="badge bg-danger p-2">IoT</span>
+                                    <span class="badge bg-warning text-dark p-2">AI/ML</span>
+                                    <span class="badge bg-info text-dark p-2">Blockchain</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Photo Gallery Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Club Gallery</h2>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="gallery-item rounded overflow-hidden">
+                            <img src="images/gallery/ai-club-1.jpg" class="img-fluid" alt="IT Club Workshop">
+                            <div class="gallery-overlay p-3">
+                                <div class="text-center">
+                                    <h6 class="mb-1">Coding Workshop</h6>
+                                    <small>October 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item rounded overflow-hidden">
+                            <img src="images/gallery/ai-club-2.jpg" class="img-fluid" alt="IT Club Hackathon">
+                            <div class="gallery-overlay p-3">
+                                <div class="text-center">
+                                    <h6 class="mb-1">VKU Hackathon</h6>
+                                    <small>September 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item rounded overflow-hidden">
+                            <img src="images/gallery/ai-club-3.jpg" class="img-fluid" alt="IT Club Team">
+                            <div class="gallery-overlay p-3">
+                                <div class="text-center">
+                                    <h6 class="mb-1">Club Team Meeting</h6>
+                                    <small>August 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item rounded overflow-hidden">
+                            <img src="images/gallery/ai-club-4.jpg" class="img-fluid" alt="IT Club Conference">
+                            <div class="gallery-overlay p-3">
+                                <div class="text-center">
+                                    <h6 class="mb-1">Tech Conference</h6>
+                                    <small>July 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item rounded overflow-hidden">
+                            <img src="images/gallery/ai-club-5.jpg" class="img-fluid" alt="IT Club Project">
+                            <div class="gallery-overlay p-3">
+                                <div class="text-center">
+                                    <h6 class="mb-1">Project Showcase</h6>
+                                    <small>June 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-item rounded overflow-hidden">
+                            <img src="images/gallery/ai-club-6.jpg" class="img-fluid" alt="IT Club Industry Visit">
+                            <div class="gallery-overlay p-3">
+                                <div class="text-center">
+                                    <h6 class="mb-1">Industry Visit</h6>
+                                    <small>May 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Testimonials Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">What Our Members Say</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="testimonial-item text-center">
+                                        <img src="images/members/testimonial1.jpg" alt="Member Testimonial" class="rounded-circle mb-3" width="100" height="100">
+                                        <p class="lead mb-3">"Joining the IT Club was the best decision I made at VKU. The hands-on projects and mentorship from senior members helped me develop skills that I couldn't learn in the classroom alone. I secured an internship at a top tech company thanks to the experience I gained here."</p>
+                                        <h5 class="mb-0">Nguyen Minh Quan</h5>
+                                        <p class="text-muted">3rd Year, Software Engineering</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-item text-center">
+                                        <img src="images/members/testimonial2.jpg" alt="Member Testimonial" class="rounded-circle mb-3" width="100" height="100">
+                                        <p class="lead mb-3">"As someone with limited coding experience, I was nervous about joining the IT Club. But the welcoming environment and supportive members made learning enjoyable. The step-by-step workshops helped me build confidence, and now I'm leading my own project team!"</p>
+                                        <h5 class="mb-0">Tran Thuy Linh</h5>
+                                        <p class="text-muted">2nd Year, Information Systems</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-item text-center">
+                                        <img src="images/members/testimonial3.jpg" alt="Member Testimonial" class="rounded-circle mb-3" width="100" height="100">
+                                        <p class="lead mb-3">"The networking opportunities through IT Club have been invaluable. I've connected with industry professionals, alumni working at major tech companies, and like-minded peers. These connections have opened doors to job opportunities and collaborative projects I never imagined possible."</p>
+                                        <h5 class="mb-0">Le Hoang Nam</h5>
+                                        <p class="text-muted">4th Year, Computer Science</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Join Club CTA Section -->
+        <section class="py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mb-4 mb-lg-0">
+                        <h2 class="fw-bold mb-3">Excited to explore Artificial Intelligence with us?</h2>
+                        <p class="lead mb-0">Join VKU AI Club today and be part of a community that learns, builds, and grows together!</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="index.html#contact" class="btn btn-light btn-lg">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">VKU Clubs</h5>
+                        <p>Discover and join the diverse range of student clubs at Vietnam-Korea University of Information and Communication Technology.</p>
+                        <div class="d-flex gap-3 mt-4">
+                            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                            <li class="mb-2"><a href="tech-clubs.html" class="text-white-50 text-decoration-none">Technology Clubs</a></li>
+                            <li class="mb-2"><a href="academic-clubs.html" class="text-white-50 text-decoration-none">Academic Clubs</a></li>
+                            <li class="mb-2"><a href="arts-clubs.html" class="text-white-50 text-decoration-none">Arts & Culture Clubs</a></li>
+                            <li class="mb-2"><a href="sports-clubs.html" class="text-white-50 text-decoration-none">Sports Clubs</a></li>
+                            <li class="mb-2"><a href="community-clubs.html" class="text-white-50 text-decoration-none">Community Service Clubs</a></li>
+                            <li class="mb-2"><a href="index.html#events" class="text-white-50 text-decoration-none">Events</a></li>
+                            <li class="mb-2"><a href="index.html#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="text-uppercase mb-4">Contact</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 470 Tran Dai Nghia, Ngu Hanh Son, Da Nang, Vietnam</li>
+                            <li class="mb-2"><i class="fas fa-envelope me-2"></i> contact@vku.udn.vn</li>
+                            <li class="mb-2"><i class="fas fa-phone me-2"></i> +84 236 3667 111</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2023 VKU Clubs. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">Designed for Vietnam-Korea University</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Custom JS -->
+        <script src="script.js"></script>
+    </body>
+    </html>
