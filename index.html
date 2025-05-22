@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VKU Clubs - Vietnam-Korea University</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header/Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="images/vku-logo.png"
+            alt="VKU Logo"
+            height="50"
+            class="me-2"
+          />
+          <div>
+            <span class="fw-bold text-primary"
+              ><span style="color: #c82032">V</span
+              ><span style="color: #f7961e">K</span
+              ><span style="color: #374f8a">U</span></span
+            >
+            <small class="d-block text-muted">Vietnam-Korea University</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Clubs
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="tech-clubs.html">Technology</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="academic-clubs.html"
+                    >Academic</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="arts-clubs.html"
+                    >Arts & Culture</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sports-clubs.html">Sports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="community-clubs.html"
+                    >Community Service</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-6 px-3 py-5 py-lg-0">
+            <h1 class="display-5 fw-bold text-white">
+              Discover Student Clubs at VKU
+            </h1>
+            <p class="lead text-white-50 mb-4">
+              Explore the diverse range of clubs and activities at VKU
+            </p>
+            <div class="d-grid gap-2 d-sm-flex">
+              <a href="#clubs" class="btn btn-primary">Explore Clubs</a>
+              <a href="#contact" class="btn btn-outline-light">Join a Club</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clubs Section -->
+    <section id="clubs" class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 mx-auto text-center">
+            <h2 class="section-title">Our Clubs</h2>
+            <p class="text-muted">
+              Discover the diverse range of student clubs at VKU and find your
+              passion
+            </p>
+          </div>
+        </div>
+
+        <!-- Club Categories/Filter -->
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="d-flex justify-content-center flex-wrap gap-2 mb-3">
+              <button
+                class="btn btn-outline-primary filter-btn active mb-2"
+                data-filter="all"
+              >
+                All Clubs
+              </button>
+              <a href="tech-clubs.html" class="btn btn-outline-primary mb-2"
+                >Technology</a
+              >
+              <a href="arts-clubs.html" class="btn btn-outline-primary mb-2"
+                >Arts & Culture</a
+              >
+              <a href="sports-clubs.html" class="btn btn-outline-primary mb-2"
+                >Sports</a
+              >
+              <a href="academic-clubs.html" class="btn btn-outline-primary mb-2"
+                >Academic</a
+              >
+              <a
+                href="community-clubs.html"
+                class="btn btn-outline-primary mb-2"
+                >Community Service</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Clubs Grid -->
+        <div class="row g-4" id="clubs-container">
+          <!-- Club cards will be dynamically inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Events Section -->
+    <section id="events" class="py-5 bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 mx-auto text-center">
+            <h2 class="section-title">Upcoming Events</h2>
+            <p class="text-muted">
+              Join our exciting club events and activities
+            </p>
+          </div>
+        </div>
+        <div class="row g-4" id="events-container">
+          <!-- Event cards will be dynamically inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 mx-auto text-center">
+            <h2 class="section-title">Club Activities Gallery</h2>
+            <p class="text-muted">
+              Glimpses of our vibrant club activities and events
+            </p>
+          </div>
+        </div>
+        <div class="row g-3" id="gallery-container">
+          <!-- Gallery items will be dynamically inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About VKU Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img
+              src="images/vku-campus.jpg"
+              alt="VKU Campus"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="section-title">About VKU</h2>
+            <p>
+              Vietnam-Korea University of Information and Communication
+              Technology (VKU) is a public university established in 2020,
+              located in the central city of Da Nang, Vietnam. It was founded
+              with cooperation between Vietnam and South Korea.
+            </p>
+            <p>
+              VKU focuses on training high-quality human resources in
+              Information Technology, Communication Technology, and related
+              fields to meet the demands of the digital transformation era and
+              Industry 4.0.
+            </p>
+            <p>
+              The university encourages students to participate in
+              extracurricular activities through various clubs to develop soft
+              skills, leadership, and teamwork abilities alongside their
+              academic studies.
+            </p>
+            <a
+              href="https://vku.udn.vn/"
+              target="_blank"
+              class="btn btn-primary mt-3"
+              >Visit Official Website</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 mx-auto text-center">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="text-muted">
+              Interested in joining a club? Have questions? Reach out to us!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <h3 class="h4 mb-4">Send us a message</h3>
+                <form id="contact-form">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="club-interest" class="form-label"
+                      >Club of Interest</label
+                    >
+                    <select class="form-select" id="club-interest">
+                      <option selected>Select a club</option>
+                      <!-- Club options will be dynamically inserted here by JavaScript -->
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <h3 class="h4 mb-4">Contact Information</h3>
+                <div class="d-flex mb-3">
+                  <div class="flex-shrink-0 me-3">
+                    <i class="fas fa-map-marker-alt text-primary fs-4"></i>
+                  </div>
+                  <div>
+                    <h5 class="h6 mb-1">Address</h5>
+                    <p class="text-muted">
+                      470 Tran Dai Nghia, Ngu Hanh Son, Da Nang, Vietnam
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex mb-3">
+                  <div class="flex-shrink-0 me-3">
+                    <i class="fas fa-envelope text-primary fs-4"></i>
+                  </div>
+                  <div>
+                    <h5 class="h6 mb-1">Email</h5>
+                    <p class="text-muted">contact@vku.udn.vn</p>
+                  </div>
+                </div>
+                <div class="d-flex mb-3">
+                  <div class="flex-shrink-0 me-3">
+                    <i class="fas fa-phone text-primary fs-4"></i>
+                  </div>
+                  <div>
+                    <h5 class="h6 mb-1">Phone</h5>
+                    <p class="text-muted">+84 236 3667 111</p>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <h5 class="h6 mb-3">Follow Us</h5>
+                  <div class="d-flex flex-wrap gap-3">
+                    <a
+                      href="https://www.facebook.com/vku.udn.vn"
+                      target="_blank"
+                      class="social-icon mb-2"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="social-icon mb-2"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="#" class="social-icon mb-2"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                    <a href="#" class="social-icon mb-2"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Club Detail Modal -->
+    <div
+      class="modal fade"
+      id="clubDetailModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-club-title">Club Name</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modal-club-content">
+            <!-- Club detail content will be dynamically inserted here -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a
+              href="#contact"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              id="modal-join-btn"
+              >Join This Club</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">VKU Clubs</h5>
+            <p>
+              Discover and join the diverse range of student clubs at
+              Vietnam-Korea University of Information and Communication
+              Technology.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#" class="text-white mb-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white mb-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white mb-2"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="text-white mb-2"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#home" class="text-white-50 text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#clubs" class="text-white-50 text-decoration-none"
+                  >Clubs</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#events" class="text-white-50 text-decoration-none"
+                  >Events</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#gallery" class="text-white-50 text-decoration-none"
+                  >Gallery</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#about" class="text-white-50 text-decoration-none"
+                  >About VKU</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#contact" class="text-white-50 text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h5 class="text-uppercase mb-4">Contact</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> 470 Tran Dai Nghia,
+                Ngu Hanh Son, Da Nang, Vietnam
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i> contact@vku.udn.vn
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2"></i> +84 236 3667 111
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-0">&copy; 2023 VKU Clubs. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0">Designed for Vietnam-Korea University</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
